@@ -5,7 +5,7 @@ namespace Debriefer.Model
     public class ReportsDBContext : DbContext
     {
 
-        public ReportsDBContext() : base()
+        public ReportsDBContext(DbContextOptions<ReportsDBContext> options) : base( options)
         {
         }
 
